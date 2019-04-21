@@ -1,3 +1,8 @@
+variable "inside_vpc" {
+  description = "Specify if the elastic instance is inside a private vpc or uses the default vpc."
+  default = 1
+}
+
 variable "create_iam_service_linked_role" {
   description = "Whether to create IAM service linked role for AWS ElasticSearch service. Can be only one per AWS account."
   default     = true
